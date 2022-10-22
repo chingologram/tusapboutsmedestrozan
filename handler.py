@@ -1,17 +1,3 @@
-# import requests
-# import time
-# import json
-# import praw
-# import unidecode
-# import boto3
-# import numpy as np
-# import os
-# from os import path
-# import PIL
-# import random
-# from wordcloud import WordCloud
-# import nltk
-
 import praw
 import json
 import random
@@ -19,10 +5,6 @@ import boto3
 import os
 import math
 
-
-def grey_color_func(word, font_size, position, orientation, random_state=None,
-                    **kwargs):
-    return f"hsl(209, 59%, {random.randint(40,70)}%)"
 
 def tusapboutsmedestrozan(evt, context):
     s3 = boto3.client('s3')
