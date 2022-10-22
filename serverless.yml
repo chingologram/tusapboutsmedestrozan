@@ -1,0 +1,41 @@
+service: reddit-words
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.8
+
+  iam:
+    role:
+      statements:
+        - Effect: "Allow"
+          Action:
+            - "s3:PutObject"
+          Resource:
+            Fn::Join:
+              - ""
+              - - "arn:aws:s3:::"
+                - "Ref" : "ApboutsBucket"
+                - "/*"
+
+functions:
+  run:
+    handler: handler.tusapboutsmedestrozan
+    events:
+       - schedule: rate(1 minute)
+    environment:
+      POST_URL: ${s3:reddit-words/post_url}
+
+resources:
+  Resources:
+    ApboutsBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: tusapboutsmedestrozan
+
+plugins:
+  - serverless-python-requirements
+custom:
+  pythonRequirements:
+    dockerizePip: true
