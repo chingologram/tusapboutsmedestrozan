@@ -17,6 +17,6 @@ Los caracteres son "destruídos" en forma aleatoria, pero siguiendo siempre la m
 
 ---
 
-(https://instagram.com/chingologram)[Instagram]
+![Instagram](https://instagram.com/chingologram)
 
-(https://twitter.com/chingologram)[Twitter]
+![Twitter](https://twitter.com/chingologram)
