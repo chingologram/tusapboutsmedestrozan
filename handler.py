@@ -109,6 +109,8 @@ def tusapboutsmedestrozan(evt, context):
     s.edit(poema + "\n\n\nhttps://github.com/nmercado1986/tusapboutsmedestrozan\n\n\n(https://instagram.com/chingologram)[@Chingologram]")
 
 
+# Función de prueba para correr en línea de comandos
+
 if __name__ == "__main__":
     
     poema = """
