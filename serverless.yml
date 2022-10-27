@@ -21,11 +21,11 @@ provider:
 
 functions:
   run:
-    handler: handler.tusapboutsmedestrozan
+    handler: handler.everyfifteenseconds
     events:
        - schedule: rate(1 minute)
     environment:
-      POST_URL: ${s3:reddit-words/post_url}
+      POST_URL: ${s3:tusapboutsmedestrozan/post_url}
 
 resources:
   Resources:
