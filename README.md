@@ -4,6 +4,7 @@ Un poema digital interactivo basado en Reddit.
 
 El código permite escribir posts que se modifiquen a sí mismos. Sos libre de copiarlo para hacer juegos, obras de literatura digital, o lo que te parezca.
 
+![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/13453609/201725343-51736ecd-a1f5-44f8-96ba-1e44c33dee2b.gif)
 
 ### Transformación del poema
 
